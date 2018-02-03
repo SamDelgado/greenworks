@@ -6,6 +6,6 @@ const path = require('path')
 if (process.env.STEAMWORKS_SDK_PATH) {
   console.log(process.env.STEAMWORKS_SDK_PATH)
 } else {
-  // Otherwise, use the default path (deps/steamworks_sdk)
-  console.log(path.join(__dirname, '..', 'deps', 'steamworks_sdk'))
+  // Otherwise, use the default path (project_root/steamworks_sdk)
+  console.log(path.join(__dirname, '..', '..', '..', 'steamworks_sdk'))
 }
